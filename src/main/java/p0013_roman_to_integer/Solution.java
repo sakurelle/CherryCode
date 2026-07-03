@@ -1,10 +1,12 @@
+package leetcode.p0013_roman_to_integer;
+
 public class Solution {
     public int romanToInt(String s) {
         int ans = 0;
         int left = 0;
         int right;
 
-        for (int i = s.length() - 1; i > -1; i--) {
+        for (int i = s.length() - 1; i >= 0; i--) {
             switch (s.charAt(i)) {
                 case 'M' -> {
                     right = left;

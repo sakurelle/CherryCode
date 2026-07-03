@@ -1,3 +1,5 @@
+package leetcode.p0014_longest_common_prefix;
+
 import java.util.Arrays;
 
 public class Solution {

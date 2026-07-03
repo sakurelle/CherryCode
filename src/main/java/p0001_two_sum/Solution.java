@@ -1,3 +1,5 @@
+package leetcode.p0001_two_sum;
+
 import java.util.Arrays;
 
 public class Solution {
