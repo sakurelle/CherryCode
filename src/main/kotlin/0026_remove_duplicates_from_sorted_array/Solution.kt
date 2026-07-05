@@ -1,21 +1,16 @@
 package leetcode.kotlin.p0026_remove_duplicates_from_sorted_array
 
-import java.util.Arrays
-
 class Solution {
     fun removeDuplicates(nums: IntArray): Int {
-        if (nums.size == 0) {
-            return 0
-        }
-
         var k = 1
-        var i = 1
-        while (i < nums.size) {
-            if (nums[i] != nums[i - 1]) {
+
+        for (i in 1..<nums.size) {
+            if (nums[i] == nums[i - 1]) {
+                continue
+            } else {
                 nums[k] = nums[i]
                 k += 1
             }
-            i += 1
         }
 
         return k
@@ -36,14 +31,14 @@ fun main() {
 }
 
 private fun runTest(solution: Solution, nums: IntArray, expectedK: Int, expectedValues: IntArray) {
-    val inputText = Arrays.toString(nums)
+    val inputText = nums.contentToString()
     val actualK = solution.removeDuplicates(nums)
-    val actualValues = Arrays.copyOf(nums, actualK)
+    val actualValues = nums.copyOf(actualK)
 
-    System.out.println("Input: nums = $inputText")
-    System.out.println("Expected: k = $expectedK, nums = ${Arrays.toString(expectedValues)}")
-    System.out.println("Actual:   k = $actualK, nums = ${Arrays.toString(actualValues)}")
-    System.out.println()
+    println("Input: nums = $inputText")
+    println("Expected: k = $expectedK, nums = ${expectedValues.contentToString()}")
+    println("Actual:   k = $actualK, nums = ${actualValues.contentToString()}")
+    println()
 }
 
 private fun createIntArray(vararg values: Int): IntArray {
