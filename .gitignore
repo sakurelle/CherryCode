@@ -1,7 +1,16 @@
+# IntelliJ IDEA
 .idea/
 *.iml
 out/
-build/
+
+# Gradle / Kotlin
 .gradle/
+.kotlin/
+build/
+
+# JVM build output
 *.class
 target/
+
+# Local machine settings
+local.properties

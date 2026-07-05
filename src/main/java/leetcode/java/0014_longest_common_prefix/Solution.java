@@ -1,4 +1,4 @@
-package leetcode.p0014_longest_common_prefix;
+package leetcode.java.p0014_longest_common_prefix;
 
 import java.util.Arrays;
 

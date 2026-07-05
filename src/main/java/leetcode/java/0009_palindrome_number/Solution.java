@@ -1,4 +1,4 @@
-package leetcode.p0009_palindrome_number;
+package leetcode.java.p0009_palindrome_number;
 
 public class Solution {
     public static boolean isPalindrome(int x) {

@@ -1,4 +1,4 @@
-package leetcode.p0026_remove_duplicates_from_sorted_array
+package leetcode.kotlin.p0026_remove_duplicates_from_sorted_array
 
 import java.util.Arrays
 
